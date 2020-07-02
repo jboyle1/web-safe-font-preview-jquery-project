@@ -4,6 +4,8 @@ $(document).ready(() => {
     });
 
     $('#font').on('change', (event) => {
-        
-    })
+        $('.preview').css({
+            fontFamily: $(event.currentTarget).val()
+        });
+    });
 });
